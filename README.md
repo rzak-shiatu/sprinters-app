@@ -19,11 +19,10 @@ Webダッシュボードとして公開している。
 ## 📂 セットアップ手順
 
 1. **リポジトリをクローン**
-
    ```
    git clone https://github.com/your-account/sprinters-app.git
    cd sprinters-app
-　 ```
+````
 
 2. **必要ライブラリをインストール**
 
@@ -31,17 +30,17 @@ Webダッシュボードとして公開している。
    pip install -r requirements.txt
    ```
 
-4. **CSV データ配置**
+3. **CSV データ配置**
    過去10年分のスプリンターズSデータを `sprinters_stakes_2015_2024.csv` としてリポジトリ直下に置く。
    ※データのフォーマットはcsvのヘッダー内容次第で自由に項目を設定できます。
 
-5. **ローカル実行**
+4. **ローカル実行**
 
    ```
    streamlit run SprintersStakes.py
    ```
 
-   ブラウザで localhost が開きます。
+   ブラウザで `http://localhost:8501` が開きます。
 
 ---
 
@@ -61,9 +60,9 @@ Webダッシュボードとして公開している。
 
 ## 🌐 デプロイ (Streamlit Cloud)
 
-1. [Streamlit Cloud](https://share.streamlit.io/) に GitHub アカウントでログイン（個人アカウント必須）
+1. [Streamlit Cloud](https://share.streamlit.io/) に GitHub アカウントでログイン
 2. 新規アプリを作成し、GitHub のリポジトリとブランチを指定
-3. `requirements.txt` を元に環境が構築、自動デプロイされます。
+3. `requirements.txt` を元に環境が構築され、自動デプロイ
 
 ---
 
@@ -72,5 +71,7 @@ Webダッシュボードとして公開している。
 * 日本語フォントの文字化けを回避するため複数設定
 * DuckDB を使うことで **SQL 集計のわかりやすさ** と **高速処理** の両立を実現
 * Polars でデータ前処理をシンプルに記述
+
+```
 
 ---
