@@ -6,3 +6,4 @@ polars
 statsforecast
 utilsforecast
 pyarrow
+japanize-matplotlib
