@@ -40,7 +40,7 @@ Webダッシュボードとして公開している。
    streamlit run SprintersStakes.py
    ```
 
-   ブラウザで `http://localhost:8501` が開きます。
+   ブラウザで localhost が開きます。
 
 ---
 
@@ -62,7 +62,7 @@ Webダッシュボードとして公開している。
 
 1. [Streamlit Cloud](https://share.streamlit.io/) に GitHub アカウントでログイン
 2. 新規アプリを作成し、GitHub のリポジトリとブランチを指定
-3. `requirements.txt` を元に環境が構築され、自動デプロイ
+3. `requirements.txt` を元に環境が構築、自動デプロイされる
 
 ---
 
@@ -73,5 +73,3 @@ Webダッシュボードとして公開している。
 * Polars でデータ前処理をシンプルに記述
 
 ```
-
----
