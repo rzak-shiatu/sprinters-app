@@ -22,9 +22,6 @@ Webダッシュボードとして公開している。
 
    ```
    git clone https://github.com/your-account/sprinters-app.git
-   ```
----
-   ```
    cd sprinters-app
 　 ```
 
