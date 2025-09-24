@@ -100,7 +100,7 @@ if mode == "人気別勝率":
                                 AND NOT (year = 2015 AND 馬名 = 'マジンプロスパー')
                                 AND NOT (year = 2018 AND 馬名 = 'ラッキーバブルズ')
                            THEN 1 ELSE 0 END
-                        ) / COUNT(*) + '％' AS 勝率
+                        ) / COUNT(*) AS 勝率
         FROM races
         WHERE 人気 IS NOT NULL
         GROUP BY 人気
@@ -167,7 +167,7 @@ elif mode == "枠順別勝率":
                   (r2.year = 2015 AND r2.馬名 = 'マジンプロスパー')
                OR (r2.year = 2018 AND r2.馬名 = 'ラッキーバブルズ')
               )
-        ) THEN 1 ELSE 0 END) / COUNT(*), 1) + '％' AS 勝率
+        ) THEN 1 ELSE 0 END) / COUNT(*), 1) AS 勝率
     FROM base b
     GROUP BY b.枠番
     ORDER BY b.枠番;
@@ -257,6 +257,7 @@ elif mode == "年ごとの平均馬体重・平均上がり3F":
     plt.title("スプリンターズS 過去10年 平均馬体重・平均上がり3Fの推移")
 
     st.pyplot(fig)
+
 
 
 
