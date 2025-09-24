@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import pandas as pd
 import matplotlib.pyplot as plt
-from matplotlib import rcParams
 import japanize_matplotlib
+from matplotlib import rcParams
 
 
 # フォント設定（全体に適用）
@@ -254,5 +254,6 @@ elif mode == "年ごとの平均馬体重・平均上がり3F":
     plt.title("スプリンターズS 過去10年 平均馬体重・平均上がり3Fの推移")
 
     st.pyplot(fig)
+
 
 
