@@ -13,7 +13,9 @@ from matplotlib import rcParams
 
 # フォント設定（全体に適用）
 # plt.rcParams["font.family"] = ["Noto Sans CJK JP", "sans-serif"]
-plt.rcParams(font='IPAexGothic')
+rcParams['font.family'] = 'sans-serif'
+rcParams['font.sans-serif'] = ['Hiragino Maru Gothic Pro', 'Yu Gothic', 'Meirio', 'Takao', 'IPAexGothic', 'IPAPGothic', 'VL PGothic', 'Noto Sans CJK JP']
+
 # rcParams['font.family'] = 'Meiryo'  # Windowsならメイリオ
 # macOS: 'Hiragino Sans'
 # Linux: 'IPAexGothic' など
@@ -255,6 +257,7 @@ elif mode == "年ごとの平均馬体重・平均上がり3F":
     plt.title("スプリンターズS 過去10年 平均馬体重・平均上がり3Fの推移")
 
     st.pyplot(fig)
+
 
 
 
