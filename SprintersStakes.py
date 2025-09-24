@@ -8,6 +8,8 @@ import matplotlib.ticker as ticker
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
+import japanize_matplotlib
+
 
 # フォント設定（全体に適用）
 plt.rcParams["font.family"] = ["Noto Sans CJK JP", "sans-serif"]
@@ -76,7 +78,7 @@ con = duckdb.connect()
 con.register("races", df)
 
 # Streamlit サイドバーで選択
-mode = st.sidebar.radio("表示モードを選択", ["人気別勝率", "枠順別勝率", "年ごとの平均"])
+mode = st.sidebar.radio("表示モードを選択", ["人気別勝率", "枠順別勝率", "年ごとの平均馬体重・平均上がり3F"])
 
 # === 人気別勝率 ===
 if mode == "人気別勝率":
@@ -252,4 +254,5 @@ elif mode == "年ごとの平均馬体重・平均上がり3F":
     plt.title("スプリンターズS 過去10年 平均馬体重・平均上がり3Fの推移")
 
     st.pyplot(fig)
+
 
