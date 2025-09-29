@@ -244,7 +244,7 @@ elif mode == "年ごとの平均馬体重・平均上がり3F":
         ax1.text(x, y, f"{y:.1f}", ha="left", va="bottom", fontsize=9, color="green")
 
     ax1.xaxis.set_major_locator(ticker.MultipleLocator(1))
-    plt.xticks(range(2015, 2025, 1))
+    plt.xticks(range(2015, 2026, 1))
 
     ax2 = ax1.twinx()
     ax2.plot(q_avg["Year"], q_avg["平均上がり3F"], marker="^", color="red", label="平均上がり3F (秒)")
@@ -257,6 +257,7 @@ elif mode == "年ごとの平均馬体重・平均上がり3F":
     plt.title("スプリンターズS 過去10年 平均馬体重・平均上がり3Fの推移")
 
     st.pyplot(fig)
+
 
 
 
