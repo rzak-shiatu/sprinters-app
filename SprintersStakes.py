@@ -23,7 +23,7 @@ rcParams['font.sans-serif'] = ['Hiragino Maru Gothic Pro', 'Yu Gothic', 'Meirio'
 st.set_page_config(page_title="スプリンターズS分析", layout="wide")
 
 # === (1) CSV読込 ===
-csv_path = os.path.join(os.path.dirname(__file__), "sprinters_stakes_2015_2024.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "sprinters_stakes_2015_2025.csv")
 df = pl.read_csv(csv_path)
 
 # タイムを秒数に変換
@@ -257,6 +257,7 @@ elif mode == "年ごとの平均馬体重・平均上がり3F":
     plt.title("スプリンターズS 過去10年 平均馬体重・平均上がり3Fの推移")
 
     st.pyplot(fig)
+
 
 
 
